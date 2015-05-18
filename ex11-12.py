@@ -1,4 +1,4 @@
-# "Asking Questions"
+# "Asking Questions" & "Prompting People"
 # raw_input() demands input from user (always string)
 # int(raw-input()) gets number as string, converting it to integer
 
