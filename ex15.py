@@ -16,7 +16,8 @@ txt.close() # closes file
 
 txt = open(filename) # opens file again
 
-file_again = raw_input("Type the filename again: ")
+raw_input("Want to read it again? Hit RETURN!")
 print txt.read()
+# same as print open(filename).read()
 
 txt.close()
