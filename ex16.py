@@ -2,6 +2,7 @@
 # x.open(), x.close(), x.read(), 
 # x.readline() - reads just one line of a text file
 # x.truncate, x.write('stuff')
+# file modes 'w' (write) , 'r' (read) , 'a' (append)
 
 from sys import argv
 script, filename = argv
@@ -15,8 +16,9 @@ raw_input("?")
 print "Opening the file..."
 target = open(filename, 'w')
 
-print "Truncating the file... Goodbye!"
-target.truncate()
+# truncating is pointless in 'w' mode, it will be overwritten anyway
+# print "Truncating the file... Goodbye!"
+# target.truncate()
 
 print "Now I'm going to ask you for three lines."
 
